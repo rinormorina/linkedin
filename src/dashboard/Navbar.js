@@ -31,7 +31,7 @@ export default function Navbar() {
                   </li>
                </ul>
                <img src={Search}></img> <input type="search" id="site-search" placeholder="Search"name="linkedin-search"></input>
-               <button onClick={handleLogOut}>Logout</button>
+               <button className="logoutBtn" onClick={handleLogOut}>Logout</button>
             </nav>
 
             <Switch>
