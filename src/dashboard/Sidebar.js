@@ -1,10 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import './Dashboard.css'
+import Inovations from './Inovations'
+import Sidebar2 from './Sidebar2'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -13,8 +14,8 @@ function TabPanel(props) {
     <div
       role="tabpanel"
       hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
+      id={`vertical-tabpanel-${index}`}
+      aria-labelledby={`vertical-tab-${index}`}
       {...other}
     >
       {value === index && (
@@ -34,8 +35,8 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
   return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    id: `vertical-tab-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`,
   };
 }
 
@@ -47,23 +48,35 @@ export default function Sidebar() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" style={{display:"grid"}}>
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-        </Tabs>
-      </Box>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
+    <Box
+      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
+    >
+      <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" style={{display:"grid"}}>
+           <Tab label="Connections"  {...a11yProps(0)} />
+           <Tab label="Invitations" {...a11yProps(1)} />
+           <Tab label="Teammates" {...a11yProps(2)} />
+           <Tab label="Groups" {...a11yProps(3)} />
+           <Tab label="Pages" {...a11yProps(4)} />
+           <Tab label="Hashtags" {...a11yProps(5)} />
+         </Tabs>
+         <TabPanel value={value} className="tabpanel" index={0}>
+         Under construction
+</TabPanel>
+  <TabPanel value={value} className="tabpanel" index={1}>
+  <Sidebar2/>
+  </TabPanel>
+  <TabPanel value={value} className="tabpanel" index={2}>
+  Under construction
+  </TabPanel>
+  <TabPanel value={value} className="tabpanel" index={3}>
+  Under construction
+    </TabPanel>
+  <TabPanel value={value} className="tabpanel" index={4}>
+  Under construction
+    </TabPanel>
+  <TabPanel value={value} className="tabpanel" index={5}>
+  Under construction
+    </TabPanel>
     </Box>
   );
 }
