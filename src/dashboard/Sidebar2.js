@@ -28,7 +28,7 @@ export default function CenteredTabs() {
       >
         {value === index && (
           <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
+            <Box>{children}</Box>
           </Box>
         )}
       </div>
@@ -45,16 +45,15 @@ export default function CenteredTabs() {
   return (<>
     <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
       <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="Item One" />
-        <Tab label="Item Two" />
-        <Tab label="Item Three" />
+        <Tab label="Received" />
+        <Tab label="Sent" />
       </Tabs>
     
     <TabPanel value={value} className="tabpanel" index={0}>
 <Inovations/>
 </TabPanel>
 <TabPanel value={value} className="tabpanel" index={1}>
-abc
+
 </TabPanel>
 </Box>
 </>
