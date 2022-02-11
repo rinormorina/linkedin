@@ -1,0 +1,691 @@
+{
+	"info": {
+		"_postman_id": "daa984b0-bd77-4c3b-996a-255c3cdc5545",
+		"name": "ThriveCoin UI Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sign_in\": {\n        \"email\": \"{{email}}\",\n        \"password\": \"{{password}}\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_url}}/v1/users/sign_in",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"v1",
+						"users",
+						"sign_in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign In",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sign_in\": {\n        \"email\": \"{{email}}\",\n        \"password\": \"{{password}}\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/v1/users/sign_in",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"sign_in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Jan 2022 03:26:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "status",
+							"value": "200 OK"
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-request-id",
+							"value": "63ef79ad-850a-41b9-8a35-1b5f943f6643"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"7a7e050a110b94fda8e36d63a82d544c\""
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.292583"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "set-cookie",
+							"value": "_interslice_session=DexvgEpxnSISQqhel8A%2FZdFtkBUmDPKDgktjDvNH%2BtcigJlfjsDm4Vh4mmcg7x9pJBBcrjwg%2F%2B8jDcryvK6jFz7%2FRH9yjpOi%2FxCrARW5sVMQJ%2FKyOL7MCgpRLhQhxdTi6TfHWOooil3CW%2Fh%2BYM%2B877Viws8%2Fd9Z2b%2B8ax7mES0TXIanujIANPHUm2elIQkNWG%2FFv%2Bpbmba5F%2FgabOHgMNiEDA8sumXvY3hWHU1gjUD%2BcPpGRugoRz6PPD2qkXwoQcSIfK51I0yTbLCvM2OL7EeMjCl58gt2o4uq9XG6qbQFnz6x4psS6TQ12ca3tv7mJobi1cqAM7g%3D%3D--LxzUu%2FQmOj64j%2Fif--qm%2BtaEZFETYMhc%2BUGSqIxw%3D%3D; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Phusion Passenger(R) 6.0.12"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=8OMopjn0oe0nos24KN4K4WvpnSek6Ys%2FJOs1Zo%2BeUr1UXW%2BVH4N4o2w0E4JjtCLNNctSUByAX4kEUNzahvBxxfPJ5OA4C6irtaccAwfekZX0cFuZkYf8suq1DCfo%2BsXqyjRUSGik5KbT3MJE\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6cc34946fafe4e32-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-27=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Signed in successfully!\",\n    \"success\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"batman@thrivecoin.com\",\n            \"authentication_token\": \"XiEVVxCDPuj7ckLoC8Ea\",\n            \"authentication_token_expire_at\": \"2022-01-12 03:36:57 UTC\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/v1/users/refresh_token",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"v1",
+						"users",
+						"refresh_token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/v1/users/refresh_token",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"refresh_token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Jan 2022 03:27:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "status",
+							"value": "200 OK"
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-request-id",
+							"value": "c99315cc-8a30-416c-adf3-98a90219abc3"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"b9d5fdbdae688db0b55c3d6c3fac3a1c\""
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.004371"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "set-cookie",
+							"value": "_interslice_session=q7tB8vRNTzsx%2FFzTdptpu6eJK4Fpl%2FnQaI2k0LQM77GJJhqXipv10OCMTLU229ZDQBb9hV0eaQyuyLGDECznzpDq%2BNY5WKqgXchxWmG9ohdeYXwIZ1yrtaRQ95nKdWxaiYNLnZruxvAbR4IdBIiRK%2FU3mhyCgBnMfs1WsNyzKPrympSQEP0LyX3hcCdhIBg1CsD93E%2F6rAO%2B57fBu85i%2F%2FLjVfzT%2BAV%2BU%2FwYoJbIWsj1U7IkmM7MJ1PwJ99cO%2FP1ALtzq82DBV6XihjPj9PRfZVY9pTZyY9nEOTEIDwRmkZ2bRKJxrO%2BcmFOcsZnMV20pUR%2BeX9hfg%3D%3D--%2FGjFO4G9%2FL%2BCfVCh--FXpnSJD9Yz%2B8uoOz3ayH6w%3D%3D; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Phusion Passenger(R) 6.0.12"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6QX9gz3jKOB6xPyq%2Fpn%2BbSGGdgi8gFw%2F%2B9rVlPtic%2B3x5ga57G6PgxC96Y93lcsZ6n9UgCDOicO3ZUdUDiCSPTL6HOCkIgYgbUnVFsOZS8p%2FoYsC5eQuE2c3w3HWSAm2gjJ2rpPTxwmBGdBm\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6cc34a0d2abf4e32-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-27=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Authentication token refreshed!\",\n    \"success\": true,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"email\": \"batman@thrivecoin.com\",\n            \"authentication_token\": \"XiEVVxCDPuj7ckLoC8Ea\",\n            \"authentication_token_expire_at\": \"2022-01-12 03:36:57 UTC\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List Invitations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/v1/users/invitations",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"v1",
+						"users",
+						"invitations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Invitations",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/v1/users/invitations",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"invitations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Jan 2022 03:27:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "status",
+							"value": "200 OK"
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-request-id",
+							"value": "63600ae0-fde4-486f-bd40-0885543bd12a"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"8a34c04a495bc7108e123122f7b618b7\""
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.005909"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "set-cookie",
+							"value": "_interslice_session=IbVVnU1DzHigmKAaTmJpBPhunhFSB3d%2BO0iu7QIlnPshEsA1jz0WJX8Uk2hE3YWipQQEQmfkP73QIogjS8U0ffAhxm8e9nKpbZfQwosMSFMqi4jDBxEGWy5KmRj9fJeEhILoaFTmE8m%2FAX7CSMYo%2BHjgmAOS%2FAPmZuiqDXnBr%2BjkmlHn69YspyjuPPSmgrsMwqZ0mQz%2BhDV44BrqeL2mc0N9pq3bTeCE2ufFNTwF4HB2BNU2mDan3KsLKVsLDNpW3vVQS0fYc0tRmd6z46RFTSOb4mNQE1t9s9TSFRRty%2FFFANpdGtTFaMAKEEywwmOQvASSZZ5Byg%3D%3D--24fqQQaQx%2B7O3Ryo--MbLsBsTmLeGJZ9BCONlj%2Bw%3D%3D; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Phusion Passenger(R) 6.0.12"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=3EIsafq2lD1Bj2hrmjuT2Dt4WAc1J1zQoGzaADbzhJqWJ5yCZykZh5wxoAwpHFf0TfOP9zAfPg28jhBXFbjgR5b2VA%2BLMxxviQGiAfLTz6BPcchufEvMP5B9zAfcfYMwM0mvQgjzkqRZTzpT\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6cc34a517c044e32-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-27=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"\",\n    \"success\": true,\n    \"data\": {\n        \"invitations\": [\n            {\n                \"name\": \"Bo Bahringer LLD\",\n                \"title\": \"Mining Analyst\",\n                \"image_url\": \"https://robohash.org/laudantiumullamqui.png?size=300x300&set=set1\",\n                \"connections\": 3543,\n                \"message\": \"Necessitatibus maiores qui. Reiciendis neque nihil. Rerum tenetur aut.\",\n                \"invitation_type\": \"sent\"\n            },\n            {\n                \"name\": \"Phil Waelchi\",\n                \"title\": \"District Hospitality Representative\",\n                \"image_url\": \"https://robohash.org/perferendissuscipitminus.png?size=300x300&set=set1\",\n                \"connections\": 0,\n                \"message\": \"\",\n                \"invitation_type\": \"sent\"\n            },\n            {\n                \"name\": \"Norris Rice\",\n                \"title\": \"Administration Coordinator\",\n                \"image_url\": \"https://robohash.org/oditestconsequatur.png?size=300x300&set=set1\",\n                \"connections\": 1569,\n                \"message\": \"Quibusdam voluptatum occaecati. Sit magnam iste. Ut architecto delectus. Tenetur ut aut. Harum eligendi dolore.\",\n                \"invitation_type\": \"received\"\n            },\n            {\n                \"name\": \"Carrol Lueilwitz\",\n                \"title\": \"Chief Accounting Representative\",\n                \"image_url\": \"https://robohash.org/totamestvelit.png?size=300x300&set=set1\",\n                \"connections\": 0,\n                \"message\": \"\",\n                \"invitation_type\": \"received\"\n            },\n            {\n                \"name\": \"Earl Renner\",\n                \"title\": \"Corporate Mining Coordinator\",\n                \"image_url\": \"https://robohash.org/eadelectuseos.png?size=300x300&set=set1\",\n                \"connections\": 6377,\n                \"message\": \"\",\n                \"invitation_type\": \"sent\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List Recent Connections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/v1/users/recent_connections",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"v1",
+						"users",
+						"recent_connections"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Recent Connections",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/v1/users/recent_connections",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"recent_connections"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 12 Jan 2022 03:27:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "status",
+							"value": "200 OK"
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-request-id",
+							"value": "84a769c3-6c74-4715-9987-64f8e7baea69"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"d37288aff2659a0f4f256c7616dc7497\""
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.004961"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "set-cookie",
+							"value": "_interslice_session=D0dpNtc1%2BYBoUnw5eiJcGL%2BpSAFrECi3unsJjNNlolQofm32CmO3YKkxceOG1vOWNDR4hMY75K%2BCR7LRCwR%2F%2F0M8m8XPBw6ZQVr5upvk7tGd4zxxyUmgeC5W2xaOXyKyXg6c%2FG8RwlysDiB7kPA5juFW6jrqkgjSSwn4Qq%2FWieLc3lCJh33m7px%2F%2BeqV%2Bw2JsPhyhqTWQaxbg5ux9DUVTg%2F5FGqPxbYNgOXf4c%2B6GbM0s4EhyVS6SDr6JkWDvwt0qPVhQQ9SYt576LBk2E60iTOIRMYp8xifkLPZhRHb%2FN2PqG3wptqf%2F6jEZdGsu8MUw7cBMvddZQ%3D%3D--uRCO76ToBu7qDAQ%2F--GwyxvQ9tnD43tu92E%2BAFNA%3D%3D; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Phusion Passenger(R) 6.0.12"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FINkbkZ26H%2FyfZb4QuN%2BPqbP2PHyIFhYA8zgvOHf9mHt%2BlN5kewXURZbpLYUHn23JkuAhPPZxWVboIcLU7vYbBtpDvw6VeVzwN9Md8lmYNPuc45bVGQ2xhoyFaGNlEpjjaSmK%2B2KRHOMScGs\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6cc34a7eb8864e32-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-27=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"\",\n    \"success\": true,\n    \"data\": {\n        \"connections\": [\n            {\n                \"name\": \"Pres. Fausto Trantow\",\n                \"title\": \"Central Education Associate\",\n                \"image_url\": \"https://robohash.org/voluptasaccusantiumquis.png?size=300x300&set=set1\",\n                \"connection_date\": \"2022-01-12T00:18:40.536Z\"\n            },\n            {\n                \"name\": \"Warner Bergnaum\",\n                \"title\": \"Technology Assistant\",\n                \"image_url\": \"https://robohash.org/impeditsuntid.png?size=300x300&set=set1\",\n                \"connection_date\": \"2022-01-10T00:18:40.536Z\"\n            },\n            {\n                \"name\": \"Marybeth Haley\",\n                \"title\": \"Corporate Construction Agent\",\n                \"image_url\": \"https://robohash.org/sitducimusiste.png?size=300x300&set=set1\",\n                \"connection_date\": \"2022-01-11T00:18:40.536Z\"\n            },\n            {\n                \"name\": \"Gov. Parthenia Boyle\",\n                \"title\": \"Construction Strategist\",\n                \"image_url\": \"https://robohash.org/voluptateeaculpa.png?size=300x300&set=set1\",\n                \"connection_date\": \"2022-01-12T00:18:40.563Z\"\n            },\n            {\n                \"name\": \"Julene Bailey\",\n                \"title\": \"Global Accounting Consultant\",\n                \"image_url\": \"https://robohash.org/occaecatirepudiandaeex.png?size=300x300&set=set1\",\n                \"connection_date\": \"2022-01-12T00:18:40.570Z\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api_url",
+			"value": "https://thc-ui-api.thrivecoin.com"
+		},
+		{
+			"key": "email",
+			"value": "batman@thrivecoin.com"
+		},
+		{
+			"key": "token",
+			"value": null
+		},
+		{
+			"key": "password",
+			"value": "myStrongPassword"
+		}
+	]
+}

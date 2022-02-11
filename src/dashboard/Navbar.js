@@ -27,7 +27,7 @@ export default function Navbar() {
                      <Link to="/dashboard/network"><img src={Network} alt='Linkedin'></img><span>Network</span></Link>
                   </li>
                   <li>
-                     <Link to="/dashboard/#"><img src={ChatImg} alt='Linkedin'></img><span>Chat</span></Link>
+                     <Link to="/dashboard/chat"><img src={ChatImg} alt='Linkedin'></img><span>Chat</span></Link>
                   </li>
                </ul>
                <img src={Search}></img> <input type="search" id="site-search" placeholder="Search"name="linkedin-search"></input>
